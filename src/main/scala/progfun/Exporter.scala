@@ -3,7 +3,7 @@ package progfun
 import better.files.File
 import play.api.libs.json.Json
 
-class Export {
+class Exporter {
 
   def exportResultToJson(path: String, pelouse: Pelouse, tondeuses: List[(Tondeuse, Tondeuse)]): Unit = {
     val limite = Json.obj("x" -> pelouse.x, "y" -> pelouse.y)

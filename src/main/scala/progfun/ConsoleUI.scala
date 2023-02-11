@@ -16,7 +16,7 @@ class ConsoleUI {
         println("Exemple: C:\\Users\\user\\Desktop\\sequence.txt")
         val filename = StdIn.readLine()
         val parser = new InputParser()
-        val exporter = new Export()
+        val exporter = new Exporter()
         val (pelouse, tondeuses) = parser.parseInputFile(filename)
         val tondeusesResult = tondeuses.map(t => (t, t.executeInstructions(pelouse, t)))
         println("Entrer le chemin du fichier de sortie sans l'extension:")
